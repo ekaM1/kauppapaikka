@@ -1,0 +1,2 @@
+# kauppapaikka
+Kauppapaikka harjoitus
