@@ -17,11 +17,10 @@ app.controller('ResourceController', function($scope, Entry) {
 	});
 	// get() returns a single entry
 
-	var entries = Entry.query(function() {
+	$scope.ads = Entry.query(function() {
 		console.log(entries);
 	});
 	//query() returns all the entries
-	$scope.ads = entries;
 	$scope.entry = new Entry();
 	//You can instantiate resource class
 
@@ -42,6 +41,10 @@ app.controller('NavBarController', function($scope) {
 	this.isSelected = function(checkTab) {
 		return this.tab === checkTab;
 	};
+});
+
+app.controller('formController', function($scope) {
+
 });
 
 
